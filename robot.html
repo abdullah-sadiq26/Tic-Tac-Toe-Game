@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Player vs Robot</title>
+    <link rel="stylesheet" href="robot.css" />
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="neon-spinner"></div>
+
+      <div class="loading-text">LOADING <span> . </span><span> . </span><span> . </span></div>
+    </div>
+
+    <div class="container">
+      <!-- Header / Selection Controls -->
+      <div class="header">
+        <div class="x-box">X</div>
+        <div class="choose-text">Choose</div>
+        <div class="o-box">O</div>
+      </div>
+
+      <!-- Tic Tac Toe 3x3 Grid -->
+      <div class="grid">
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+        <button class="boxes"></button>
+      </div>
+    </div>
+
+    <button class="reset">Restart</button>
+    <button class="back">Back to Home</button>
+
+    <script src="robot.js"></script>
+  </body>
+</html>

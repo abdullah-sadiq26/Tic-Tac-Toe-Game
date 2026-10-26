@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="neon-spinner"></div>
+
+      <div class="loading-text">LOADING <span> . </span><span> . </span><span> . </span></div>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>TIC TAC TOE</h1>
+        <h2>SELECT GAME MODE</h2>
+      </header>
+
+      <div class="main-box">
+        <a href="robot.html">
+          <div class="left-box">
+            <span>🤖 Vs</span>
+            <div class="title">COMPUTER (AI)</div>
+          </div>
+        </a>
+
+        <a href="human.html">
+          <div class="right-box">
+            <span>🧑‍🤝‍🧑 Vs</span>
+            <div class="title">Human</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const loaderContainer = document.querySelector(".loader-container");
+      window.addEventListener("load", () => {
+        loaderContainer.classList.add("hide");
+      });
+    </script>
+  </body>
+</html>
